@@ -14,7 +14,6 @@ Group: Development/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Prefix: %{_prefix}
 BuildArch: noarch
-Vendor: Jeff Ortel <jortel@redhat.com>
 Url: https://fedorahosted.org/suds
 AutoReq: 0
 
