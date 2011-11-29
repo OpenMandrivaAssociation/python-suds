@@ -17,7 +17,7 @@ BuildArch: noarch
 Url: https://fedorahosted.org/suds
 AutoReq: 0
 
-BuildPreReq: python-devel python-setuptools
+BuildRequires: python-devel python-setuptools
 
 %description
 suds
