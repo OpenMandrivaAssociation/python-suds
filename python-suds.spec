@@ -48,3 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f INSTALLED_FILES
 %defattr(-,root,root)
+
+
+%changelog
+* Wed Dec 07 2011 Pischulin Anton <apischulin@mandriva.org> 0.4-1
++ Revision: 738478
+- add python-suds sources
+
