@@ -6,12 +6,11 @@
 
 Summary: Lightweight SOAP client
 Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: %{name}-%{unmangled_version}.tar.gz
+Version: 0.4.1
+Release: 1
+Source0: https://fedorahosted.org/releases/s/u/suds/%{name}-%{version}.tar.gz
 License: GPL3
 Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Prefix: %{_prefix}
 BuildArch: noarch
 Url: https://fedorahosted.org/suds
@@ -29,7 +28,7 @@ suds
 python setup.py build
 
 %install
-python setup.py install  --root=$RPM_BUILD_ROOT --record=INSTALLED_FILES
+python setup.py install  --root=%{buildroot} --record=INSTALLED_FILES
 
 touch DIRS
 for i in `cat INSTALLED_FILES`; do
@@ -44,14 +43,13 @@ done
 sed -e "/\.py[co]$/d" -e "s/\.py$/.py*/" DIRS FILES >INSTALLED_FILES
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f INSTALLED_FILES
-%defattr(-,root,root)
 
 
 %changelog
 * Wed Dec 07 2011 Pischulin Anton <apischulin@mandriva.org> 0.4-1
 + Revision: 738478
 - add python-suds sources
+
 
