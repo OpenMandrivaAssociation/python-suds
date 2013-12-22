@@ -1,2 +1,4 @@
+removed_sources:
+  python-suds-0.4.tar.gz: 839b9293802afa1c9415199e78d793a9073bb8f5
 sources:
-  "python-suds-0.4.tar.gz": 839b9293802afa1c9415199e78d793a9073bb8f5
+  python-suds-0.4.1.tar.gz: 787f7b5a4475a887e712e85adafe94af00d4e5a4
