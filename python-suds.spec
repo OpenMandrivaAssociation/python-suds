@@ -1,7 +1,7 @@
 Summary: Lightweight SOAP client
 Name:    python-suds
 Version: 0.4.1
-Release: 1
+Release: 2
 Source0: https://fedorahosted.org/releases/s/u/suds/%{name}-%{version}.tar.gz
 License: GPL3
 Group: Development/Python
